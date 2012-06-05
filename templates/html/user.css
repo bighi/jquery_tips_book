@@ -1,0 +1,15 @@
+/* add custom CSS */
+#chapters 
+{
+  counter-reset: chapter;
+}
+
+.chapter h2
+{
+  page-break-before: always;
+}
+
+.chapter h3
+{
+  page-break-before: always; 
+}

@@ -1,0 +1,48 @@
+# The book's title. Will be used everywhere!
+title: "Better jQuery"
+
+# The book's language.
+language: en
+
+# Your book copyright info.
+# Here's some examples:
+#
+#   Copyright 2012 by Leonardo Bighi.
+#   Copyright 2012 by Leonardo Bighi. This work is licensed under MIT License.
+#   This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License.
+#   This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+#   This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+#
+copyright: "Copyright (C) 2012 Leonardo Bighi."
+
+# Who's publishing this book.
+publisher: "Leonardo Bighi"
+
+# When this book was published.
+published_at: "2012-05-31"
+
+# Some book description.
+subject: "You already know how to use jQuery. Now it's time to get better."
+
+# Some keywords that identify this book.
+keywords: "jquery, javascript, learn, tips, tricks"
+
+# Some unique identification. Works great with your domain
+# like `http://yourbook.example.com`.
+uid: "889b0e157e09f51d250b990a307e6cf2"
+
+# Your book identification like ISBN or ISSN.
+identifier:
+  id: "http://yourbook.example.com"
+  type: "URL" # can be ISBN, ISSN or URL
+
+# This book authors.
+authors:
+  - "Leonardo Bighi"
+
+# The theme that will be used for source
+# code syntax highlighting.
+theme: mac_classic
+
+# The base URL from your source code.
+base_url: http://example.com
