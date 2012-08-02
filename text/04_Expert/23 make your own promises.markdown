@@ -1,0 +1,1 @@
+### Tip #23: Make your own Promises using $.Deferred
