@@ -68,7 +68,7 @@ The $('a') selector will match ANY link inside your page, so it'll probably matc
 
 Our plugin is looking very good right now. It works as expected and has no bugs. But it's not perfect yet. There's one little detail still missing.
 
-Most jQuery functions allow you to chain them to do many things over the selector. [See tip #6][] for more details on chaining. Our current code won't allow it, but it's something very easy to do. The trick to make chaining work is that your function must return the matched elements. To do that, we'll add the word `return` before our `$(this).each()` call.
+Most jQuery functions allow you to chain them to do many things over the selector. See tip #6 for more details on chaining. Our current code won't allow it, but it's something very easy to do. The trick to make chaining work is that your function must return the matched elements. To do that, we'll add the word `return` before our `$(this).each()` call.
 
 This is the final version of the code:
 
