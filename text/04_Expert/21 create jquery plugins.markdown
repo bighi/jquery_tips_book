@@ -21,7 +21,7 @@ $('#some_element').removeAndAlert();
 
 How does it work? The `$()` function passes the matched element to our `removeAndAlert()` function as the `this` variable. If you look at our plugin code, you'll see we use $(this) to refer to the matched element.
 
-It works, but it's not very well done. We have a few problems with this code. First, we're calling $ but we can never make sure that the $ symbol refers to the jQuery variable. There are other javascript frameworks claiming the $ variable.
+It works, but it's not very well done. We have a few problems with this code and we can make it way better by following the best practices of jQuery plugins. First, we're calling $ but we can never make sure that the $ symbol refers to the jQuery variable. There are other javascript frameworks claiming the $ variable.
 
 The second problem is that jQuery functions operate over the selector, but the selector my have matched more than one element.
 
@@ -65,5 +65,25 @@ $('a').removeAndAlert();
 @@@
 
 The $('a') selector will match ANY link inside your page, so it'll probably match more than 1. But now our function is smart enough to handle these cases.
+
+Our plugin is looking very good right now. It works as expected and has no bugs. But it's not perfect yet. There's one little detail still missing.
+
+Most jQuery functions allow you to chain them to do many things over the selector. [See tip #6][] for more details on chaining. Our current code won't allow it, but it's something very easy to do. The trick to make chaining work is that your function must return the matched elements. To do that, we'll add the word `return` before our `$(this).each()` call.
+
+This is the final version of the code:
+
+@@@ javascript
+(function($){
+    $.fn.removeAndAlert = function() {
+        return $(this).each(function() {
+            // The each() function changes the meaning of $(this)
+            // Now $(this) references the current element being iterated,
+            // not the whole collection of matched elements.
+            $(this).remove();
+        });
+        alert('Your element(s) have been destroyed! The plugin works!');
+    };
+})(jQuery);
+@@@
 
 Just save your code in a `.js` file and your plugin is ready!
