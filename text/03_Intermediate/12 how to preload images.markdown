@@ -1,6 +1,6 @@
 ### Tip #12: How to preload images
 
-In dynamuc you want to dinamically show images to the user, it's a better practice to load the image before adding the <img> element to your page. This way the image will show up instantly, without the loading time.
+In dynamic you want to dynamically show images to the user, it's a better practice to load the image before adding the <img> element to your page. This way the image will show up instantly, without the loading time.
 
 This is called preloading and is very easy to do.
 

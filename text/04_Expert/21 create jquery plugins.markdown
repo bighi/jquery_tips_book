@@ -25,7 +25,7 @@ It works, but it's not very well done. We have a few problems with this code and
 
 The second problem is that jQuery functions operate over the selector, but the selector my have matched more than one element.
 
-To solve our first problem, we must make sure that the `$` variable points to jQuery. We do this by encapsulating our plugin function inside an anonymous function in javascript. This sounds as comething complicated, but it's actually very easy. Look at the code below:
+To solve our first problem, we must make sure that the `$` variable points to jQuery. We do this by encapsulating our plugin function inside an anonymous function in javascript. This sounds as something complicated, but it's actually very easy. Look at the code below:
 
 @@@ javascript
 (function($){
@@ -38,7 +38,7 @@ To solve our first problem, we must make sure that the `$` variable points to jQ
 
 What have we added here? There's an outer function containing our plugin. This function declares one argument called `$`. The we call this function (last line of code) passing the jQuery variable. This means we're 100% sure our `$` variable references `jQuery` when inside the containing function.
 
-How do we solve our second problem? We want to make sure our function will do it's magic inside **each** matched element. To do this you won't just refer to `this`as if it's one single element. We're gonna iterate over it.
+How do we solve our second problem? We want to make sure our function will do it's magic inside **each** matched element. To do this you won't just refer to `this` as if it's one single element. We're gonna iterate over it.
 
 Let's redo our code one more time.
 

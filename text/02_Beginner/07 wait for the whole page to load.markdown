@@ -2,7 +2,7 @@
 
 When you're using jQuery, most of the time you'll be manipulating DOM elements (those things on the page). Sometimes your JavaScript may load so fast that your code is going to be executed before the page is ready. 
 
-If you try to make that third paragraph blink and spin and zoom before your browser even knows a third paragraph is suposed to be there, you're going to run into trouble.
+If you try to make that third paragraph blink and spin and zoom before your browser even knows a third paragraph is supposed to be there, you're going to run into trouble.
 
 In these cases, there's a method to make you code wait for the entire page to load before it runs.
 

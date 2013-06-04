@@ -2,7 +2,7 @@
 
 When I learned this last tip I thought to myself "I will never use this". Oh, how wrong I was. Read this tip, learn it, save it for the future. When you need it you will be thankful.
 
-HTML5 offers us a way to store arbritary data inside elements, using `data-` attributes. You can create any attribute you want as long as the name starts with `data-`. Just like `data-order`, `data-full-name` and `data-price-with-discount`. The value of these attributes are always strings.
+HTML5 offers us a way to store arbitrary data inside elements, using `data-` attributes. You can create any attribute you want as long as the name starts with `data-`. Just like `data-order`, `data-full-name` and `data-price-with-discount`. The value of these attributes are always strings.
 
 Example:
 
